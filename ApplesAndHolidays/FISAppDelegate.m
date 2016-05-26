@@ -106,14 +106,9 @@
                  toHoliday:(NSString *)holiday
                   inSeason:(NSString *)season
                 inDatabase:(NSDictionary *)database {
-    database[season][holiday] = [[NSMutableArray alloc]init];
+    //database[season][holiday] = [[NSMutableArray alloc]init];
+    //database[season][holiday] = supply;
     [database[season][holiday] addObject:supply];
-    
-
-    
-   database[season][holiday] = [[NSMutableArray alloc]init];
-    [database[season][holiday] addObject:supply];
-
     
     return database;
 }
